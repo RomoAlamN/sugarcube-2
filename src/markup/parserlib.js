@@ -120,6 +120,7 @@
 
 		handler(w) {
 			const matchStart = this.lookahead.lastIndex = w.matchStart;
+			window.V = State.variables;
 
 			if (this.parseTag(w)) {
 				/*

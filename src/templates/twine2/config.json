@@ -1,5 +1,5 @@
 {
-	"name"        : "SugarCube",
+	"name"        : "SugarCube-m",
 	"version"     : null,
 	"description" : "A full featured, highly customizable story format.  See its <a href=\"http://www.motoslave.net/sugarcube/'{{BUILD_VERSION_MAJOR}}'/#documentation\" target=\"_blank\">documentation</a>.",
 	"author"      : "Thomas Michael Edwards",

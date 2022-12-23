@@ -644,7 +644,6 @@ var Save = (() => { // eslint-disable-line no-unused-vars, no-var
 
 			// Restore the state.
 			State.unmarshalForSave(saveObj.state); // may also throw exceptions
-
 			// Show the active moment.
 			Engine.show();
 			/* eslint-enable no-param-reassign */

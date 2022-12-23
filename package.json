@@ -1,5 +1,5 @@
 {
-  "name": "SugarCube",
+  "name": "SugarCube-m",
   "version": "2.36.1",
   "author": "Thomas Michael Edwards <thomasmedwards@gmail.com>",
   "description": "Dependency install configuration for SugarCube's Node.js-hosted build script, build.js.",

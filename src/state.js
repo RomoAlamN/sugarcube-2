@@ -148,6 +148,26 @@ var State = (() => { // eslint-disable-line no-unused-vars, no-var
 		_activeIndex = stateObj.index;
 		_expired     = stateObj.hasOwnProperty('expired') ? [...stateObj.expired] : [];
 
+		// restore prototypes
+		for(let s of _history){
+			debugger;
+			let o = s.variables;
+			for(let k of Object.keys(o)){
+				if(o[k].p_t !== undefined){
+					// recreate with p_t as the prototype
+					try{
+						let t = Object.create(o[k].p_t.prototype);
+						for(let p of Object.keys(o[k])){
+							t[p] = o[k][p];
+						}
+						o[k] = t;
+					}catch(err){
+						console.log(err)
+					}
+				}
+			}
+		}
+
 		if (stateObj.hasOwnProperty('seed')) {
 			/*
 				We only need to restore the PRNG's seed here as `momentActivate()` will handle

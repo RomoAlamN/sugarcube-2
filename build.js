@@ -199,7 +199,7 @@ if (_opt.options.build) {
 		const semver = require('semver');
 		const { name, version } = require('./package.json'); // relative path must be prefixed ('./')
 		const prerelease = semver.prerelease(version);
-
+		console.log(name);
 		return {
 			title      : name,
 			major      : semver.major(version),
